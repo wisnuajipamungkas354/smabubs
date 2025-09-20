@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,20 @@
           * {
             font-family: "Poppins", sans-serif;
           }
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            width: 20rem;
+            height: 20rem;
+            overflow: hidden;
+          }
         </style>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
     </head>
-    <body>
+    <body class="dark:bg-black">
         <header class="w-full flex px-4 md:px-12 py-6">
           <div class="mx-auto w-full md:max-w-[1024px] lg:max-w-[1200px] flex justify-between items-center">
             <div>
@@ -31,14 +40,16 @@
 
             {{-- Desktop Version --}}
             <nav class="hidden md:block">
-              <ul class="flex gap-6">
+              <ul class="flex gap-6 dark:text-white">
                 <li><a>Beranda</a></li>
                 <li><a>Tentang Kami</a></li>
                 <li><a>PPDB</a></li>
               </ul>
             </nav>
             <div class="hidden md:block">
-              <button class="bg-[#008080] rounded-full px-6 py-3 text-white">Contact</button>
+              <button id="mode" class="bg-[#008080] rounded-full px-4 py-2 text-white flex justify-center items-center">
+                <i class="bi bi-brightness-high text-xl"></i>
+              </button>
             </div>
 
             {{-- Mobile Version --}}
@@ -49,13 +60,44 @@
             </div>
           </div>
         </header>
-        <main class="w-full flex md:px-12 py-6">
+        <main class="w-full flex md:px-12 py-6 overflow-x-hidden">
           {{ $slot }}
         </main>
-        <footer>
-
+        <footer class="w-full flex md:p-12 overflow-x-hidden bg-[#008080]">
+          <div class="mx-auto w-full md:max-w-[1024px] lg:max-w-[1200px] flex justify-between items-center">
+            <div class="w-[60%]">
+              <h3 class="text-white font-bold text-2xl">SMABUBS</h3>
+              <span class="text-gray-200 flex items-center gap-3 mt-3">
+                <i class="bi bi-geo-alt-fill text-xl"></i>
+                <p class="mt-3">Jl. Babakan Tamiang, RT 018 / RW 008, Kel. Lemahmulya, Kec. Majalaya, Kab. Karawang 41370</p>
+              </span>
+              <span class="text-gray-200 flex items-center gap-3 mt-3">
+                <i class="bi bi-envelope-at-fill text-xl"></i>
+                <p>smabubs@smabubs.ac.id</p>
+              </span>
+            </div>
+            <div class="w-[40%] flex justify-end flex-col items-end">
+              <span class="text-4xl text-white flex gap-4 self-end">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </span>
+              <p class="text-gray-200 text-end mt-3">&copy; <span id="year"></span> SMA Baitul Ulya Boarding School. All right reserved</p>
+            </div>
+          </div>
         </footer>
 
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+          buttonMode = document.getElementById("mode");
+          
+          buttonMode.addEventListener('click', () => {
+            console.log('button di klik');
+          });
+        
+        </script>
         @livewireScripts
+        @stack('script')
     </body>
 </html>
