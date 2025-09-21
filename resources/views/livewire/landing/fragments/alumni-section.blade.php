@@ -5,27 +5,27 @@
   </div>
   <div class="flex gap-6 justify-between flex-wrap">
       <div class="grid grid-cols-2 pr-2 overflow-hidden w-[30rem]">
-        <div class="w-[13rem] h-64">
+        <div class="max-w-[13rem] h-64">
           <img src={{ asset('img/ppdb.png') }} alt="Foto Alumni" class="object-cover h-full w-full rounded-xl" />
         </div>
-        <div class="py-4 flex flex-col justify-between">
+        <div class="px-2 md:px-0 py-4 flex flex-col justify-between">
           <div>
-            <h4 class="text-2xl font-bold text-accent-content">Wisnu Aji Pamungkas</h4>
+            <h4 class="text-lg md:text-2xl font-bold text-accent-content">Faishal Daffa Hidayat</h4>
             <p class="dark:text-white">Angkatan 2017</p>
           </div>
-          <p class="mt-3 line-clamp-5 dark:text-[#C3C3C3]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consectetur tempore nesciunt quo aspernatur hic voluptatum pariatur odio sequi obcaecati eos, aut dicta explicabo alias, cum blanditiis! Ab, veniam rem!</p>
+          <p class="mt-3 line-clamp-5 dark:text-[#C3C3C3] text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consectetur tempore nesciunt quo aspernatur hic voluptatum pariatur odio sequi obcaecati eos, aut dicta explicabo alias, cum blanditiis! Ab, veniam rem!</p>
         </div>
       </div>
       <div class="grid grid-cols-2 pr-2 overflow-hidden w-[30rem]">
-        <div class="w-[13rem] h-64">
+        <div class="max-w-[13rem] h-64">
           <img src={{ asset('img/ppdb.png') }} alt="Foto Alumni" class="object-cover h-full w-full rounded-xl" />
         </div>
-        <div class="py-4 flex flex-col justify-between">
+        <div class="px-2 md:px-0 py-4 flex flex-col justify-between">
           <div>
-            <h4 class="text-2xl font-bold text-accent-content">Wisnu Aji Pamungkas</h4>
+            <h4 class="text-lg md:text-2xl font-bold text-accent-content">Wisnu Aji Pamungkas</h4>
             <p class="dark:text-white">Angkatan 2017</p>
           </div>
-          <p class="mt-3 line-clamp-5 dark:text-[#C3C3C3]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consectetur tempore nesciunt quo aspernatur hic voluptatum pariatur odio sequi obcaecati eos, aut dicta explicabo alias, cum blanditiis! Ab, veniam rem!</p>
+          <p class="mt-3 line-clamp-5 dark:text-[#C3C3C3] text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consectetur tempore nesciunt quo aspernatur hic voluptatum pariatur odio sequi obcaecati eos, aut dicta explicabo alias, cum blanditiis! Ab, veniam rem!</p>
         </div>
       </div>
   </div>

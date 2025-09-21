@@ -45,8 +45,8 @@
         </script>
     </head>
     <body class="dark:bg-black">
-        <header class="w-full flex px-4 md:px-12 py-6 relative">
-          <div class="mx-auto w-full md:max-w-[1024px] lg:max-w-[1200px] flex justify-between items-center">
+        <header class="w-full flex flex-col md:px-12 py-6">
+          <div class="mx-auto w-full px-4 md:max-w-[1024px] lg:max-w-[1200px] flex justify-between items-center relative z-50">
             <div>
               <a class="font-extrabold text-2xl text-accent-content"><span class="text-[#008080]">SMA</span>BUBS</a>
             </div>
@@ -59,19 +59,28 @@
                 <li><a>PPDB</a></li>
               </ul>
             </nav>
-            <div class="hidden md:block">
-              <button id="mode" class="bg-[#008080] hover:bg-[#006666] rounded-full px-4 py-2 text-white flex justify-center items-center cursor-pointer">
-                <i id="icon-mode" class="bi bi-brightness-high text-xl"></i>
-              </button>
-            </div>
-
-            {{-- Mobile Version --}}
-            <div class="block md:hidden">
-              <button class="text-3xl p-1 dark:text-white">
-                <i class="bi bi-list"></i>
-              </button>
+            
+            <div class="flex gap-3">
+              <div class="block">
+                <button id="mode" class="bg-[#008080] hover:bg-[#006666] rounded-full px-4 py-2 text-white flex justify-center items-center cursor-pointer">
+                  <i id="icon-mode" class="bi bi-brightness-high text-xl"></i>
+                </button>
+              </div>
+              {{-- Mobile Version --}}
+              <div class="block md:hidden">
+                <button id="btn-mobile-menu" class="text-3xl p-1 dark:text-white">
+                  <i class="bi bi-list"></i>
+                </button>
+              </div>
             </div>
           </div>
+          <nav id="nav-mobile" class="hidden absolute left-0 top-20 z-40 transition duration-200 w-full flex-col justify-center dark:bg-black py-12 px-4 shadow-xl backdrop-blur-md">
+            <ul class="w-full flex flex-col gap-6 dark:text-white font-medium text-center">
+              <li class="py-3 w-full rounded-full hover:bg-gray-200 text-[#008080]"><a>Beranda</a></li>
+              <li class="py-3 w-full rounded-full hover:bg-gray-200 hover:text-black"><a>Tentang Kami</a></li>
+              <li class="py-3 w-full rounded-full hover:bg-gray-200 hover:text-black"><a>PPDB</a></li>
+            </ul>
+          </nav>
         </header>
         <main class="w-full flex md:px-12 overflow-x-hidden mb-20">
           {{ $slot }}
@@ -106,6 +115,13 @@
             document.getElementById("year").textContent = new Date().getFullYear();
             buttonMode = document.getElementById("mode");
             iconButtonMode = document.getElementById("icon-mode");
+            navMobile = document.getElementById("nav-mobile");
+            buttonMobileMenu = document.getElementById("btn-mobile-menu");
+
+            buttonMobileMenu.addEventListener('click', () => {
+              navMobile.classList.toggle('hidden');
+              navMobile.classList.toggle('flex');
+            });
             
             buttonMode.addEventListener('click', () => {
               document.documentElement.classList.toggle('dark');

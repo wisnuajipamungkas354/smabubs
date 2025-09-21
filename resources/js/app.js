@@ -9,20 +9,10 @@ import 'swiper/css/pagination';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const slides = [
-    '<img src="http://192.168.1.12/img/ppdb.png" />',
-    '<img src="http://192.168.1.12/img/ppdb2.png" />',
-    '<img src="http://192.168.1.12/img/ppdb3.png" />',
-    '<img src="http://192.168.1.12/img/ppdb4.png" />',
-    '<img src="http://192.168.1.12/img/profilsekolah.png" />',
-    '<img src="http://192.168.1.12/img/doc1.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-    '<img src="http://192.168.1.12/img/doc2.png" />',
-  ];
+  let slides = [];
+  for(let i = 1; i <= 30; i++) {
+    slides = [...slides, `<img src="https://picsum.photos/300/300.webp?random=${i}" alt="dummy" class="object-cover h-full" />`];
+  }
 
   const swiper = new Swiper('.swiper', {
     modules: [Virtual, Autoplay],
