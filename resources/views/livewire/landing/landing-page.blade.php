@@ -1,4 +1,4 @@
-<div class="my-8 mx-auto w-full md:max-w-[1024px] lg:max-w-[1200px] flex flex-col justify-between items-center gap-[10rem]">
+<div class="mx-auto w-full md:max-w-[1024px] lg:max-w-[1200px] flex flex-col items-center gap-[5rem]">
     @include('livewire.landing.fragments.hero-section')
     @include('livewire.landing.fragments.reason-section')
     @include('livewire.landing.fragments.profile-section')
