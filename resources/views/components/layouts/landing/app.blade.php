@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
         <title>{{ $title ?? config('app.name') }}</title>
+        <meta name="description" content="SMA Baitul Ulya Boarding School adalah sekolah menengah atas swasta yang didirikan oleh Yayasan Baitul Ulya pada tahun 2016.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{ url()->current() }}">
 
         {{-- Fonts --}}
         <link rel="preconnect" href="https://fonts.googleapis.com">
