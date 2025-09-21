@@ -9,7 +9,7 @@
           </span>
           <div class="flex flex-col gap-3 px-5">
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">13 Desember 2024</p>
-              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMK Negeri  Makassar Telah Dibuka!</h4>
+              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMA Baitul Ulya  Boarding School Telah Dibuka!</h4>
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">By Admin SmaBubs</p>
               <a class="text-xs md:text-sm text-[#008080] mt-3 font-semibold">Baca Selengkapnya</a>
           </div>
@@ -20,7 +20,7 @@
           </span>
           <div class="flex flex-col gap-3 px-5">
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">13 Desember 2024</p>
-              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMK Negeri  Makassar Telah Dibuka!</h4>
+              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMA Baitul Ulya  Boarding School Telah Dibuka!</h4>
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">By Admin SmaBubs</p>
               <a class="text-xs md:text-sm text-[#008080] mt-3 font-semibold">Baca Selengkapnya</a>
           </div>
@@ -31,7 +31,7 @@
           </span>
           <div class="flex flex-col gap-3 px-5">
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">13 Desember 2024</p>
-              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMK Negeri  Makassar Telah Dibuka!</h4>
+              <h4 class="text-base md:text-lg font-semibold text-accent-content">Pendaftaran SMA Baitul Ulya  Boarding School Telah Dibuka!</h4>
               <p class="text-xs md:text-sm text-[#727272] dark:text-[#C3C3C3]">By Admin SmaBubs</p>
               <a class="text-xs md:text-sm text-[#008080] mt-3 font-semibold">Baca Selengkapnya</a>
           </div>
