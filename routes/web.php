@@ -7,11 +7,11 @@ use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
 
-Route::get('/landing', LandingPage::class);
+Route::get('/', LandingPage::class);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
